@@ -2,6 +2,7 @@ import React from 'react'
 import './auth.css'
 import Input from '../ui/input'
 import { FaFolderPlus } from "react-icons/fa";
+import Button from "../ui/Button"
 const register = () => {
   return (
     <div className='auth_main'>
@@ -22,7 +23,10 @@ const register = () => {
                </div>
                <div className="auth_item">
                 <label >Password</label>
-                <Input placeholder="Enter your email"  required="required" />
+                <Input placeholder="Enter your password"  required="required" />
+               </div>
+               <div className="auth_action">
+                <Button type="submit" children="login" onclick="onclick"/>
                </div>
         </div>
       </form>
