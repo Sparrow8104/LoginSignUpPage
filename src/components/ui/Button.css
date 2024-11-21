@@ -1,0 +1,17 @@
+.ui_button{
+    font-family: 'Times New Roman', Times, serif;
+    outline:none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(213, 180, 162);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.ui_button:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.04);
+    background-color:  rgb(230, 180, 162);
+}

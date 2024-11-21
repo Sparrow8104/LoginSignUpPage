@@ -1,3 +1,12 @@
+:root{
+    --sec-color:rgb(84, 125, 120);
+    --primary-color:#5085B2;
+    --sec-color-light:#3B6464;
+}
+body{
+    font-family: sans-serif;
+}
+
 .auth_main{
     position: absolute;
     top: 50%;
@@ -5,12 +14,10 @@
     transform: translate(-50%,-50%);
     width: 360px;
     background-color:rgb(84, 125, 120);
-    padding: 1rem;
+    padding: 1.7rem;
     padding-bottom: 2rem;
     border-radius: 8px;
-}
-body{
-    font-family: sans-serif;
+    color: white;
 }
 .auth_container{
     display: flex;
@@ -44,7 +51,12 @@ body{
     gap: 0.2rem;
 }
 .auth_item label{
-    color: Black;
+    color:white;
     font-size: 17px;
     padding: 0rem 0rem 0.4rem 0rem;
+}
+@media only screen and (max-width:380px){
+    .auth_main{
+        width: 290px;
+    }
 }
