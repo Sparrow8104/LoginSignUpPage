@@ -3,15 +3,18 @@ import Input from '../ui/input'
 import Button from '../ui/Button'
 import BackToLogin from '../ui/backToLogin'
 import { MdEmail } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 function ForgetPassword() {
 
 
     const [email, setEmail] = useState('');
+    const navigate=useNavigate();
     const emailChange = (event) => setEmail(event.target.value);
 
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log({ email});
+        console.log( email);
+        navigate('/otp/verify')
       };
   return (
   <div className='auth_main'>
@@ -27,7 +30,7 @@ function ForgetPassword() {
                 <Input onChange={emailChange} type="email" placeholder="enter your email"/>
             </div>
             <div className="auth_action">
-                <Button>Send OTP</Button>
+                <Button type="submit">Send OTP</Button>
             </div>
             <div>
                 <BackToLogin/>

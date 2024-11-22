@@ -67,7 +67,21 @@ body{
     text-decoration: none;
     color: white;
 }
+.otp_input_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    gap: 1rem;
+}
+.otp_input{
+    text-align: center;
+    font-weight: 100;
+}
+.timer{
+    color: white;
+    padding: 2px;
+}
 @media only screen and (max-width:380px){
     .auth_main{
         width: 290px;
