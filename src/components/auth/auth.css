@@ -55,6 +55,19 @@ body{
     font-size: 17px;
     padding: 0rem 0rem 0.4rem 0rem;
 }
+
+.auth_options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1 rem;
+    font-size: 14px;
+}
+.auth_options a{
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (max-width:380px){
     .auth_main{
         width: 290px;
