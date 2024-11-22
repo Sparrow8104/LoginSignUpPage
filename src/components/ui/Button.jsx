@@ -1,8 +1,9 @@
 import React from 'react'
 import './Button.css'
-const Button=({onclick,type,children})=> {
+const Button=({onClick,type,children})=> {
+    console.log('onclick type' ,typeof onClick)
   return (
-    <button className="ui_button" onClick={onclick} type={type}>{children}</button>
+    <button className="ui_button" onClick={onClick} type={type}>{children}</button>
   )
 }
 
