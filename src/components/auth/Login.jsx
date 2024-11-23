@@ -26,11 +26,11 @@ const Login=() => {
                 </div>
             <div className="auth_item">
                 <label>Email</label>
-                <Input onChange={emailChange} type="email" placeholder="enter your email"/>
+                <Input required onChange={emailChange} type="email" placeholder="enter your email"/>
             </div>
             <div className="auth_item">
                 <label>Password</label>
-                <Input onChange={passwordChange} type="password" placeholder="enter your password"/>
+                <Input required onChange={passwordChange} type="password" placeholder="enter your password"/>
             </div>
             <div className="auth_action">
                 <Button>Login</Button>

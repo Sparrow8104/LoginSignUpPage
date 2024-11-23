@@ -3,6 +3,7 @@ import { IoIosFingerPrint } from "react-icons/io";
 import Button from '../ui/Button';
 import BackToLogin from '../ui/backToLogin';
 import Timer from './Timer';
+import { useNavigate } from 'react-router-dom';
 function VerifyOtp() {
 
     const ref1=useRef(null)
@@ -11,6 +12,8 @@ function VerifyOtp() {
     const ref4=useRef(null)
     const ref5=useRef(null)
     const ref6=useRef(null)
+
+    const navigate=useNavigate();
     const inputRef=[ref1,ref2,ref3,ref4,ref5,ref6]
 
     const [otp1,setOtp1]=useState('');
@@ -38,6 +41,8 @@ function VerifyOtp() {
         event.preventDefault();
         const finalOtp=otp1+otp2+otp3+otp4+otp5+otp6
         console.log(finalOtp)
+
+        navigate('/password/update')
     }
   return (
     <div className='auth_main'>

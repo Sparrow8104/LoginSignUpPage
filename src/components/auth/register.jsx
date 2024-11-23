@@ -5,11 +5,12 @@ import Input from '../ui/input'
 import { FaFolderPlus } from "react-icons/fa";
 import Button from "../ui/Button"
 import BackToLogin from "../ui/backToLogin"
+import { useNavigate } from 'react-router-dom';
 const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-  
+    const navigate=useNavigate()
     const nameChange = (event) => {
       setName(event.target.value);
     }
@@ -19,6 +20,7 @@ const Register = () => {
     const submitHandler = (event) => {
       event.preventDefault();
       console.log({ name, email, password });
+      navigate('/login')
     };
   return (
     <div className='auth_main'>
