@@ -10,6 +10,7 @@ function App() {
     <Routes>
        < Route path='/register' element={<Register/>}/>
        <Route path='/login' element={<Login/>}/>
+       
        <Route path='/forget/password' element={<ForgetPassword/>}/>
        <Route path='/otp/verify' element={<VerifyOtp/>}/>
        <Route path='/password/update' element={<UpdatePassword/>}/>
