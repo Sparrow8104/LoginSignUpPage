@@ -1,0 +1,90 @@
+:root{
+    --sec-color:rgb(84, 125, 120);
+    --primary-color:#5085B2;
+    --sec-color-light:#3B6464;
+}
+body{
+    font-family: sans-serif;
+}
+
+.auth_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    background-color:rgb(84, 125, 120);
+    padding: 1.7rem;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    color: white;
+}
+.auth_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.auth_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem;
+
+}
+.auth_header svg{
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: rgb(232, 243, 246);
+}
+.auth_header .auth_heading{
+    font-size: 20px;
+    color: white;
+}
+.auth_header .auth_title{
+    color: white;
+    font-size: 11px;
+}
+.auth_item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.auth_item label{
+    color:white;
+    font-size: 17px;
+    padding: 0rem 0rem 0.4rem 0rem;
+}
+
+.auth_options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1 rem;
+    font-size: 14px;
+}
+.auth_options a{
+    text-decoration: none;
+    color: white;
+}
+.otp_input_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+.otp_input{
+    text-align: center;
+    font-weight: 100;
+}
+.timer{
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+}
+@media only screen and (max-width:380px){
+    .auth_main{
+        width: 290px;
+    }
+}
